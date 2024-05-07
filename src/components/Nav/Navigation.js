@@ -3,17 +3,19 @@ import {Link, NavLink} from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <div className=' '>
+    <div className=''>
       <nav>
         <ul>
             <div className='group'>
-                <li><NavLink to='/home'>Home</NavLink></li>
-                <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
-                <li><NavLink to='/blog'>Blogs</NavLink></li>
-                <li><NavLink to='/project'>Projects</NavLink></li>
+                <li><Link to='/home'>Home</Link></li>
+                <li><Link to='/dashboard'>Dashboard</Link></li>
+                <li><Link to='/blog'>Blogs</Link></li>
+                <li><Link to='/users'>Users</Link></li>
+                <li><Link to='/project'>Projects</Link></li>
             </div>
             <div className='auth'>
-                <li><NavLink to='/users'>Users</NavLink></li>
+                <li className='nav-btn'><Link to='/login'>Login</Link></li>
+                <li className='nav-btn'><Link to='/register'>Sign up</Link></li>
             </div>
             {/* <li><Link to='/my-tasks'>My Tasks</Link></li> */}
         </ul>

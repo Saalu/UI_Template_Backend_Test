@@ -15,8 +15,8 @@ const Register = () => {
             <input  type=' ' placeholder='Password' />
             <span>Re-enter Password</span>
             <input  type=' ' placeholder='Password' />
-            <input  type='submit' className='btn' value='Create account' placeholder='Password' />
-            {/* <p>Already have an account? <span><Link to='/login'>Sign-in</Link></span> </p> */}
+            <input  type='submit' className='btn' value='Sign up' placeholder='Password' />
+            <p className=''>Already have an account? <span><Link to='/login'>Login</Link></span> </p>
       </form>
     </div>
   )

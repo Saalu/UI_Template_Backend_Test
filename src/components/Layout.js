@@ -5,6 +5,8 @@ import Home from './Home';
 import Dashboard from './Dashboard';
 import Project from './Project';
 import Blog from './Blog';
+import Register from './auth/Register';
+import Login from './auth/Login';
 
 
 const Layout = () => {
@@ -16,6 +18,8 @@ const Layout = () => {
       <Route path="/blog" element={<Blog />} />
       <Route path="/project" element={<Project />} />
       <Route path="/users" element={<Users />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
 //   </Router>
   )
