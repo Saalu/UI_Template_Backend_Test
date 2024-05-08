@@ -7,6 +7,9 @@ import Project from './Project';
 import Blog from './Blog';
 import Register from './auth/Register';
 import Login from './auth/Login';
+import Edit from './crud/Edit';
+import Create from './crud/Create';
+import Delete from './crud/Delete';
 
 
 const Layout = () => {
@@ -20,6 +23,9 @@ const Layout = () => {
       <Route path="/users" element={<Users />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/edit" element={<Edit />} />
+      <Route path="/create" element={<Create />} />
+      <Route path="/delete" element={<Delete />} />
     </Routes>
 //   </Router>
   )

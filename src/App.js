@@ -13,8 +13,7 @@ function App() {
     <div className="">
       <Navigation />
       <Layout/>
-        {/* <Register/> */}
-        {/* <Login/> */}
+       
     </div>
   );
 }
