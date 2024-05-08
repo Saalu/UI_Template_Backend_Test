@@ -2,7 +2,8 @@
 
 :root{
     --green: #27ae60;
-    --blue: #275fae;
+    --blue: #1F6FEB;
+    /* --blue: #275fae; */
     --dark-green:#219150;
     --dark-bg:#032541;
     --yellow:#e7ab29;
@@ -52,14 +53,16 @@ html{
   font-size: 1.6rem;
   padding: 1.5rem 9%;
   background-color: #fff;
-  height: 58px;
+  /* height: 58px; */
   width: 100%;
-  box-shadow:var(--box-shadow);
-  border: var(--border);
+  /* box-shadow:var(--box-shadow); */
+  /* border: var(--border); */
+  border-bottom:10px red solid;
   
 }
 
 .navigation ul {
+  background: yellow;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,6 +78,67 @@ html{
   height: 100vh;
   background: var(--blue);
 }
+
+/* =================NAVIGATION============= */
+
+nav{
+  font-size: 1.5rem;
+  padding: 0 4rem;
+  box-shadow: var(--shadow);
+  border: var(--border);
+  border-bottom: .3rem #ccc solid;
+  height: 58px;
+
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-top: 2rem; */
+}
+nav ul .group{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* padding: 1rem; */
+  height: 56px;
+}
+nav ul .group li{
+  margin-right: 1.5rem;
+ /* padding: 3.5rem 0; */
+
+}
+nav ul li a{
+  color: var(--black);
+  /* height: 56px; */
+}
+nav ul li {
+  padding: 2rem 0;
+}
+
+nav ul li:hover{
+  border-bottom:var(--blue) solid .2rem;
+  /* border-bottom: #297ee7 solid .2rem; */
+}
+
+/* ----------Auth------------- */
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.auth .nav-btn{
+  cursor: pointer;
+  /* border: var(--border); */
+  /* padding: 0.5rem 1rem; */
+}
+.auth .nav-btn:hover{
+color: #297ee7;
+font-weight: 500;
+  
+}
+
 
 /* =======================  FORM  ======================== */
 
@@ -149,65 +213,6 @@ html{
 }
 
 
-
-
-/* ------------Navigation-------- */
-
-nav{
-  font-size: 1.5rem;
-  padding: 0 4rem;
-  box-shadow: var(--shadow);
-  border: var(--border);
-
-}
-
-nav ul{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* padding-top: 2rem; */
-}
-nav ul .group{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  /* padding: 1rem; */
-}
-nav ul .group li{
-  margin-right: 1.5rem;
- /* padding: 3.5rem 0; */
-}
-nav ul li a{
-  color: var(--black);
-}
-nav ul li {
-  /* background: #27ae60; */
-  padding: 2.3rem 0;
-  /* border-bottom: #e7ab29 solid .3rem; */
-  height: 7.3rem;
-
-}
-
-nav ul li:hover{
-  /* border-bottom: #297ee7 solid .2rem; */
-}
-
-
-.auth {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.auth .nav-btn{
-  cursor: pointer;
-  /* border: var(--border); */
-  /* padding: 0.5rem 1rem; */
-}
-.auth .nav-btn:hover{
-color: #297ee7;
-font-weight: 500;
-  
-}
 
 /* ==============DASHBOARD============== */
 
@@ -287,11 +292,11 @@ table .actions td{
 table .actions td:hover{
   
 }
-table .actions .edit{
+table .actions .edit a{
  color: var(--green);
 }
-table .actions .delete{
-  color: rgb(174, 32, 32);
+table .actions .delete a{
+  color:#FF0000;
   
 }
 table .actions td{}
