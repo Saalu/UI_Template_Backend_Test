@@ -114,7 +114,7 @@ nav ul li a{
   /* height: 56px; */
 }
 nav ul li {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 nav ul li:hover{
@@ -212,7 +212,43 @@ font-weight: 500;
   text-decoration: underline;
 }
 
+/* =========Fixed======= */
+.delete-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0 , 0, 0, .7);
+  /* background: rgba(255, 255, 255, .9); */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+}
+.delete-container .card{
+  width: 40rem;
+  background: #fff;
+}
+.delete-container .msg{
+  font-size: 1.6rem;
+}
+.delete-container .card span{
+  margin-top: 1.5rem;
+}
+.delete-container .card .btn.del{
+  background: #cc1010;
+}
+.delete-container .card .btn.cancel{
+  background: #ddd;
+  color: var(--black);
+  border: var(--border);
+  margin-right: 1rem;
+}
 
+/* .delete-container{
+ right: 0;
+} */
 
 /* ==============DASHBOARD============== */
 
@@ -299,7 +335,10 @@ table .actions .delete a{
   color:#FF0000;
   
 }
-table .actions td{}
+
+table .actions td{
+
+}
 
 /* ========================BLOGS=================== */
 
@@ -333,9 +372,43 @@ table .actions td{}
 
 
 
+/* =========EDIT ============ */
+
+.edit-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+}
+.edit-container form{
+  position: relative;
+  background: #fff;
+}
+.edit-container .close-editor{
+  padding: .3rem 1rem;
+  /* width: 3rem; */
+  font-weight: 600;
+  position: absolute;
+  right:2%;
+  top: 0;
+  cursor: pointer;
+}
+.edit-container .close-editor:hover{
+  background: #ddd;
+ 
+}
 
 
-
+.edit-container .close-editor span{
+  font-size: 2rem;
+  color: var(--black);
+}
 
 
 
